@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 1.9.3
+env:
+  - DB=sqlite
+script:
+  - bundle exec rspec spec/models/post_spec.rb
+before_script:
+  - bundle exec rake db:create RAILS_ENV=test
+bundler_args: --binstubs=./bundler_stubs
