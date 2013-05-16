@@ -7,7 +7,7 @@ class Post
   end
 
   def summary
-    @body[0..30]
+    @body[0..29]
   end
 
 end

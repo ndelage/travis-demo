@@ -11,4 +11,5 @@ describe Post do
       post.summary.length.should == 30
     end
   end
+
 end
